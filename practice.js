@@ -7,8 +7,20 @@
 // номер місяця і показуємо до якого часу року він належить
 // Якщо користувач ввів 2 - показуєм слово Зима
 // Якщо 3 -Весна і т.д.
+// const maus = Number(prompt('Яка пора року'));
 
-// ............
+// if(maus === 12 || maus === 1 || maus === 2 ){
+//     console.log('Зима')
+// }else if(maus >=3 && maus<=5){
+//     console.log('Весна')
+// }else if(maus >=6 && maus<=8){
+//     console.log('Літо')
+// }else if(maus >=7 && maus<=9){
+//     console.log('Осень')
+// }else{
+//     console.log('Error')
+// }
+// // ............
 
 // Задача №2
 
@@ -18,7 +30,18 @@
 
 // const login = 'user@gmail.com';
 // const password = '12345'
+// const userLogin = prompt('Ведіть логин')
+// const userPasswold = prompt('Ведіть пароль')
 
+// // if(login === userLogin && password === userPasswold){
+// //     console.log('Молодець')
+// // }else{
+// //     console.log('Не молодець')
+// // }
+
+
+// const result = login === userLogin && password === userPasswold?  'Молодець': 'Не молодець';
+// console.log(result);
 // ............
 
 // Задача №3
@@ -37,20 +60,69 @@
 // const max = 5;
 // let total = 0;
 
+// for(let i =min; i <=max; i +=1){
+//     if(i % 2 === 0){
+//      console.log("total",);
+//      total +=i;
+//     }
+// }
+   
+
+// console.log("Сума чисел", total);
+
+
+// for(let i =min; i <=max; i +=1){
+//     if(i % 2 !== 0){
+//      console.log("Не парне число", i);
+//      continue 
+//     }
+//     console.log("Парні числа",i);
+//     total += i ;
+// }
+   
+
+// console.log("Сума чисел", total);
 //..............................
 
 // Задача №4
 
 // Порахувати загальну суму в корзині
-// const cart = [54, 28, 105, 70, 92, 17, 120];
+// const carts = [54, 28, 105, 70, 92, 17, 120];
+// let total = 0; 
 
+// for( let i = 0; i <cart.length ; i += 1 ){
+//     console.log(cart[i])
+//     total += cart[i] 
+
+// }
+// for (const cart of carts) {
+//     total += cart;
+    
+// }
+// console.log('Сума в кошику',total)
 // ...........................
 
 // Задача №5
 
 // Напиши скрипт який підраховує суму усіх парних чисел в масиві
-// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+let total = 0;
 
+// for(let i = 0; i < numbers.length; i += 1 ){
+//     console.log(numbers[i])
+//     if( numbers[i] % 2 === 0){
+//         console.log('Це є парні числа')
+//         total += numbers[i]
+//     }
+// }
+// console.log(total)
+for (const number of numbers) {
+    if(number % 2 === 0){
+        console.log('Це є парні числа');
+        total +=number;
+    }
+}
+console.log(total);
 // ....................
 // Практика
 
